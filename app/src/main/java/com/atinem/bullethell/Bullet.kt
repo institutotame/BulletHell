@@ -1,6 +1,7 @@
 package com.atinem.bullethell
 
 import android.graphics.RectF
+import android.util.Log
 
 class Bullet(screenX : Float) {
 
@@ -29,6 +30,7 @@ class Bullet(screenX : Float) {
     }
 
     fun spawn(pX : Float, pY : Float, vX : Float, vY : Float){
+        Log.d("Bullet", "SpawnMethod")
         mRect.left = pX
         mRect.top = pY
         mRect.right = pX + mWidth
